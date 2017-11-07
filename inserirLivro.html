@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserir Livros</title>
+    </head>
+    <body class="container">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/style.css" rel="stylesheet">
+        <h1>Cadastrar Novo Livro</h1>
+        <form id="frmCadLivro" name="frmCadLivro" method="post" action="insLiv.php">
+           <div class="form-group">
+              <label for="lblNome">Nome:</label>
+              <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="Nome do Livro...">
+           </div>
+           <div class="form-group">
+              <label for="lblEdi">Editora:</label>
+              <input type="text" class="form-control" name="txtEdi" id="txtEdi"  placeholder="Editora Responsável..">
+           </div>
+           <div class="form-group">
+              <label for="lblDesc">Descrição:</label>
+              <input type="text" class="form-control" name="txtDesc" id="txtDesc" placeholder="Descrição do Livro...">
+           </div>
+           <div class="form-group">
+              <label for="lblGen">Gênero:</label>
+              <input type="text" class="form-control" name="txtGen" id="txtGen" placeholder="Gênero do Livro...">
+           </div> 
+            <div class="form-group">
+              <label for="lblQtd">Quantidade:</label>
+              <input type="text" class="form-control" name="txtQtd" id="txtQtd" placeholder="Quantidade Disponível...">
+           </div>
+            <div class="form-group">
+              <label for="lblAut">Autor:</label>
+              <input type="text" class="form-control" name="txtAut" id="txtAut" placeholder="Autor do Livro...">
+           </div>  
+
+                     
+           <input name="bt_cad" id="bt_cad" class="btn btn-success" type="submit" value="Gravar"> 
+           <input name="bt_limpar" id="bt_limpar" class="btn btn-warning" type="reset" value="Limpar"> 
+           <input name="bt_voltar" id="bt_voltar" class="btn btn-danger" type="button" value="Voltar"
+                 onclick="javascript:location.href='listarLivrosB.php'">  
+         
+        </form>        
+    </body>
+</html>
